@@ -1,0 +1,128 @@
+body {
+    height: 100vh;
+    color: white;
+    background-color: black;
+    font-family: "Gowun Batang";
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.card-1 {
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #cbfe13,
+                0 0 0.8rem #cbfe13,
+                0 0 2.8rem #cbfe13,
+                inset 0 0 1.3rem #cbfe13;
+}
+
+.card-2 {
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #fe1323,
+                0 0 0.8rem #fe1323,
+                0 0 2.8rem #fe1323,
+                inset 0 0 1.3rem #fe1323;
+}
+
+.card-3 {
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #1352fe,
+                0 0 0.8rem #1352fe,
+                0 0 2.8rem #1352fe,
+                inset 0 0 1.3rem #1352fe;
+}
+
+.card {
+    height: 50%;
+    width: 50%;
+    border-radius: 2rem;
+    margin-bottom: 10%;
+    padding: 2em;
+    text-align: center;
+    border: 0.2rem solid #fff;
+}
+
+img {
+    height: 10em;
+    width: 10em;
+}
+
+h3 {
+    animation: pulsate 0.11s ease-in-out infinite alternate;    
+    font-family: "Gowun Batang";
+    font-size: 2em;
+}
+
+p {
+    
+    text-align: center;
+    font-family: "Gowun Batang";
+    font-size: 1.5em;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+button {
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    padding: 1em;
+    color: white;
+    font-size: 1em;
+    animation: flicker 1.5s infinite alternate;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    display: inline;
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+    text-align : center;
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 0 0 4px #fff,
+                     0 0 11px #fff,
+                     0 0 19px #fff,
+                     0 0 40px #f09,
+                     0 0 80px #f09,
+                     0 0 90px #f09,
+                     0 0 100px #f09,
+                     0 0 150px #f09;
+    }
+    20%, 24%, 55% {       
+        text-shadow: none;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        text-shadow: 0 0 4px #fff,
+                     0 0 10px #fff,
+                     0 0 18px #fff,
+                     0 0 38px #f09,
+                     0 0 73px #f09,
+                     0 0 80px #f09,
+                     0 0 94px #f09,
+                     0 0 140px #f09;
+    }
+}
